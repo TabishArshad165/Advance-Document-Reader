@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,11 +10,16 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_pdf"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/txt_size"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/pdf_card"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sfsdbfs"/>
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.ProgressBar"/>
 
-</LinearLayout>
+
+
+</RelativeLayout>
